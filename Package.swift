@@ -6,14 +6,14 @@ import PackageDescription
 let package = Package(
     name: "spm-check-updates",
     platforms: [
-        .macOS(.v10_13)
+        .macOS(.v11)
     ],
     products: [
         .executable(name: "spm-check-updates", targets: ["spm-check-updates"])
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.3.1"),
-        .package(url: "https://github.com/tuist/xcodeproj.git", from: "8.20.0"),
+        .package(url: "https://github.com/tuist/xcodeproj.git", from: "9.0.0"),
         .package(url: "https://github.com/jkandzi/Progress.swift", from: "0.4.0"),
         .package(url: "https://github.com/onevcat/Rainbow", from: "4.0.1")
     ],
